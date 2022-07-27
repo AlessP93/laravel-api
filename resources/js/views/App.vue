@@ -1,30 +1,24 @@
 <template>
     <div>
-        <h1>Post Lists</h1>
-        <ul>
-            <li v-for="post in posts" :key="post.slug">
-                {{post.title}}
-            </li>
-        </ul>
+        <BaseHeader/>
+        <BaseMain/>
+        <BaseFooter/>
     </div>
 </template>
 
 <script>
-import Axios from 'axios'
-import { createDecipheriv } from 'crypto'
+import BaseHeader from '../components/macro/BaseHeader.vue';
+import BaseMain from '../components/macro/BaseMain.vue';
+import BaseFooter from '../components/macro/BaseFooter.vue';
+
 
 export default {
     name: 'App',
-    data() {
-        posts: []
+    components: {
+        BaseHeader,
+        BaseMain,
+        BaseFooter
     },
-    created() {
-        axios.get('http://127.0.0.1:8001/api/posts')
-        .then((response) => {
-            console.log(response.data);
-        })
-        .catch()
-    }
 };
 </script>
 
