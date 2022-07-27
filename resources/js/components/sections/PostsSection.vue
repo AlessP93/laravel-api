@@ -1,9 +1,9 @@
 <template>
-  <section class="posts">
+  <section>
     <div class="container">
-        <ul class="row">
-            <li class="col-4 mb-5" v-for="post in posts" :key="post.slug">
-                <BaseCard :title="post.title" :content="post.content" :slug="post.slug"/>
+        <ul>
+            <li v-for="post in posts" :key="post.slug">
+                {{post.title}}
             </li>
         </ul>
     </div>
@@ -29,12 +29,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.posts {
-    background-color: var(--bg-section-light);
-    padding: 3.125rem 0;
-    ul {
-        padding: 0;
-        list-style: none;
-    }
-}
+
 </style>
