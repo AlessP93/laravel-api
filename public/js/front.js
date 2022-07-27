@@ -1958,17 +1958,12 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-!(function webpackMissingModule() { var e = new Error("Cannot find module '../common/BaseCard.vue'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
-
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'PostsSection',
   data: function data() {
     return {
       posts: []
     };
-  },
-  components: {
-    BaseCard: !(function webpackMissingModule() { var e = new Error("Cannot find module '../common/BaseCard.vue'"); e.code = 'MODULE_NOT_FOUND'; throw e; }())
   },
   created: function created() {
     var _this = this;

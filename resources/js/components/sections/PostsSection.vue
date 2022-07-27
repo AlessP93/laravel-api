@@ -11,16 +11,13 @@
 </template>
 
 <script>
-import BaseCard from '../common/BaseCard.vue';
+
 export default {
     name: 'PostsSection',
     data() {
         return {
             posts: []
         };
-    },
-    components: {
-        BaseCard,
     },
     created() {
         axios.get('/api/posts')

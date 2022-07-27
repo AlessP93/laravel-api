@@ -1,7 +1,7 @@
 <template>
-<main>
-    <PostsSection/>
-</main>
+    <main>
+        <PostsSection/>
+    </main>
 </template>
 
 <script>
